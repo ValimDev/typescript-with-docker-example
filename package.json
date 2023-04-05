@@ -1,0 +1,21 @@
+{
+  "name": "typescript-docker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "up": "docker-compose up",
+    "postup": "tsc --w",
+    "start": "nodemon -L --watch ./dist ./dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.3"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
